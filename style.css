@@ -17,17 +17,34 @@ header, footer {
 
 main {
     flex-grow: 1;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
 }
 
 a {
     color: #00FF7F;
 }
 
+img {
+    max-width: 100%;
+}
+
+.link-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
 ul {
     list-style-type: square;
+    text-align: left;
     margin: 1em;
 }
 
 .credit-name {
     color: #7CC6FE;
+}
+
+.description {
+    color: #E4572E;
 }
