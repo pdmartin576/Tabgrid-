@@ -1,0 +1,26 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+body {
+    font-size: 1.5em;
+    line-height: 1.5;
+    color: #F4FAFF;
+    background-color: #111;
+}
+
+h1, footer {
+    background-color: #9400D3;
+    text-align: center;
+}
+
+a {
+    color: #00FF7F;
+}
+
+ul {
+    list-style-type: square;
+    margin: 1em;
+}
+
+.credit-name {
+    color: #7CC6FE;
+}
