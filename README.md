@@ -3,3 +3,5 @@
 
 ## Contents
 <p>Enclosed with this repository are five .zip file "kits" for players to begin experimenting with using sound effects. Note that there are some repeated files in each kit, as they are designed to be usable directly out of the box with no additional downloads (beyond PureData, of course).</p>
+
+<p>You can view the documentation by opening the [Home Page link](/index.html)
