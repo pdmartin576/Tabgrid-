@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project Page</title>
+</head>
+<body>
+    <header>
+        <h1>Process</h1>
+        <p>The making &amp; modification of Tabgrid~</p>
+        <nav class="main-nav">
+            <a href="/index.html">Home</a>
+            <a href="/pages/process.html">Process</a>
+            <a href="/pages/biblio.html">Credits</a>
+        </nav>
+    </header>
+    <main>
+        <h2>A Tool for Roleplaying Games</h2>
+        <p>As a D&D Player and Dungeon Master, I've been looking for a way to play a number of sound effects during my games. In most games, the extent of sound effects are what a player can replicate with their mouths, which can only be so effective. I was fed up with the limitations of playing individual sound fules, so I set out to make a soundboard. I went into this project with two goals in mind: to make a tool that was <em class="description">quick and easy to use for people with any range of experience</em> and to make it <em class="description">controllable with both hotkeys and on-screen buttons</em>.</p>
+        <p>One of the products that served as an inspiration for this project was the <a href="https://www.elgato.com/en/welcome-to-stream-deck">elgato stream deck</a>, a robust tool for easy hotkey actions that go beyond sound effects. I wanted to make something that would serve a similar purpose to this without the commitment of buying an $80 module.</p>
+        <br>
+        <h2>A Tool for Pure Data</h2>
+        <p>When I first set out to make this project, I was looking to make it as a website. I was looking for something quick and easy for people without any prior knowledge, and what would be more approachable than a website? But when it came to implementing a grid of buttons with JavaScript and HTML, the limits of the software and my programming knowledge came very quickly. At a dead end with the website idea, I turned to a more familiar software: <em class="credit-name">Pure Data</em>. I was able to arrange any number of button modules that I could want and the patch would remember what was saved in the grids to access immediately upon opening. This was great! I started out with 4 buttons and got to testing with it. I knew that I would be able to work with it, but the next phase of the project was playtesting.</p>
+        <br>
+        <p>Before I was in my playtest phase, though, I was gathering data on how players would interact with sound effects. To this end, I had prepared both an audio effect and a single sound file player to use in a session. My players loved both, and I proceeded with sound effect generation. While I had used audio effects in a pronounced way for this testing phase, in talking with my players about implementation I realized that if I wanted to make a quick and easy tool for people with or without audio experience, then I would need to make a tool that pandered to the abilities of the user. Someone without a background in audio technology is not usually looking for a way to modify their sounds, and what proves to be most effective is a dedicated sound file that already does whatever effect they're looking for. To this end, I made my <em class="description">Tabgrid~</em> patch seperate from the <em class="description">SFXGrid</em> patch to make a component that fits within <em class="credit-name">Pure Data</em>'s design ethos of modular components and a patch to show the basics of what could be done with <em class="description">Tabgrid~</em>.</p>
+        <br>
+        <h2>Use-Case Trials</h2>
+        <p>I managed to get a group together on short notice, and ran a one-shot with them in order to test the patch. I was able to set up my windows to give more space to the battle map than the PD patch, relying on the hotkeys more than the physical buttons.</p>
+        <img src="my_view.png" alt="A recreation of my split window setup from playtesting">
+        <p>I did end up using the buttons more than I thought in live play, as they came up as the first thing I would see when I would need to play a sound effect while tabbed out from my split windows. While I had considered making the second row of hotkeys into stop inputs for the 4 buttons in the grid, input from my playtesters confirmed that they would rather have a wider range of sound effect buttons to use than dedicated stop buttons. I've kept the player packages from that playtest mostly untouched, besides adding a toggle for turning the DSP on that I had overlooked. With that, minor comments, and a grid of 8 sound effect buttons, I had made the first complete version of my project. The beauty of Pure Data is that I can continue to build upon this project in the future to add more functions to both <em class="description">Tabgrid~</em> and <em class="description">SFXGrid</em>. With my work on Github, I also have a place to easily share my work with future players.</p>
+    </main>
+    <footer>
+    <p>&copy; Patrick Martin 2023</p>
+    </footer>
+</body>
+</html>
