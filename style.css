@@ -48,3 +48,7 @@ ul {
 .description {
     color: #E4572E;
 }
+
+iframe {
+    max-width: 100%;
+}
